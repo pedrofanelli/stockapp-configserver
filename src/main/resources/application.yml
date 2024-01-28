@@ -15,6 +15,7 @@ spring:
         git:
           uri: ${github-uri}
           searchPaths: ${github-searchpaths}
+          default-label: master
   
 
 # POST localhost:8071/encrypt /decrypt + en body/raw el dato
