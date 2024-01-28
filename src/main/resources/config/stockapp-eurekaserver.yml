@@ -15,6 +15,6 @@ eureka:
     
 management:
   endpoints:
-    enabled-by-default: true
-
-#management.endpoints.web.exposure.include=*
+    web:
+      exposure:
+        include: "*"
