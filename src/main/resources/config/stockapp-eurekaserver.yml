@@ -1,11 +1,7 @@
 # si le pegamos a http://localhost:8071/stockapp-eurekaserver/default - donde default es el perfil, obtenemos la config
 
-spring:
-  config:
-    import: optional:file:.env[.properties]
-
 server:
-  port: ${eurekaport}
+  port: 8761
   
   
 eureka:
