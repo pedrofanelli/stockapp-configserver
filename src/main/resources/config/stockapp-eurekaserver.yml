@@ -1,0 +1,16 @@
+
+server:
+  port: 8761
+  
+  
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server: 
+    waitTimeInMsWhenSyncEmpty: 5
+    
+    
+#management.endpoints.web.exposure.include=*
