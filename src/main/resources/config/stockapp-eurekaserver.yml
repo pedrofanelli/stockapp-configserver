@@ -1,4 +1,7 @@
-
+spring:
+  cloud:
+    config:
+      label: master
 
 server:
   port: 8761
