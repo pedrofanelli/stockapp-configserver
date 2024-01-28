@@ -1,6 +1,8 @@
 spring:
   application:
     name: stockapp-configserver    # important for Service Discovery!
+  config:
+    import: optional:file:.env[.properties]   # para extraer variables de file .env
   profiles:
     active: git  
   cloud:
@@ -11,11 +13,9 @@ spring:
           #search-locations: classpath:/config
           # The classpath attribute causes Spring Cloud Config Server to look in the src/main/resources/config folder.
         git:
-          uri: https://github.com/pedrofanelli/stockapp-configserver.git
-          searchPaths: src/main/resources/config
-  # para extraer variables de file .env
-  config:
-    import: optional:file:.env[.properties]
+          uri: ${github-uri}
+          searchPaths: ${github-searchpaths}
+  
 
 # POST localhost:8071/encrypt /decrypt + en body/raw el dato
 # esta key la necesitamos para que funcione! para que encripte lo que pasamos
