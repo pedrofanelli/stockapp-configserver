@@ -18,6 +18,7 @@ spring:
     import: optional:file:.env[.properties]
 
 # POST localhost:8071/encrypt /decrypt + en body/raw el dato
+# esta key la necesitamos para que funcione! para que encripte lo que pasamos
 encrypt:
   key: ${encryptkey}
   
