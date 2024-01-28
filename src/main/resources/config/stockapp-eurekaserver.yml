@@ -1,3 +1,4 @@
+# si le pegamos a http://localhost:8071/stockapp-eurekaserver/default - donde default es el perfil, obtenemos la config
 
 server:
   port: 8761
