@@ -1,7 +1,7 @@
 # si le pegamos a http://localhost:8071/stockapp-eurekaserver/default - donde default es el perfil, obtenemos la config
 
 server:
-  port: '{cipher}fc8d73d370626f7365a31ead4996ac1832fca6476ed28f2ecd3298028104fba0'
+  port: '{cipher}fc8d73d370626f7365a31ead4996ac1832fca6476ed28f2ecd3298028104fba0' #8761
   
   
 eureka:
