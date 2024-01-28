@@ -12,4 +12,5 @@ public class StockappConfigserverApplication {
 		SpringApplication.run(StockappConfigserverApplication.class, args);
 	}
 
+	
 }
