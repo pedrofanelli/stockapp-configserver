@@ -16,7 +16,12 @@ spring:
           uri: ${github-uri}
           searchPaths: ${github-searchpaths}
           default-label: master
-  
+  security:
+    user:
+      name: configUser
+      password: configPassword
+      
+
 
 # POST localhost:8071/encrypt /decrypt + en body/raw el dato
 # esta key la necesitamos para que funcione! para que encripte lo que pasamos
@@ -30,3 +35,6 @@ server:
 logging:
   level:
     web: DEBUG
+    
+
+
