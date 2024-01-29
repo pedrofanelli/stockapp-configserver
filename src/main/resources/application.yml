@@ -18,8 +18,8 @@ spring:
           default-label: master
   security:
     user:
-      name: configUser
-      password: configPassword
+      name: ${security-user}
+      password: ${security-pass}
       
 
 
