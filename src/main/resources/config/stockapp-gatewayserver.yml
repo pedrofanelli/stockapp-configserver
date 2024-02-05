@@ -30,13 +30,13 @@ spring:
           locator:
             enabled: true
             lower-case-service-id: true
-        #routes:
-        #- id: organization-service
-          #uri: lb://organization-service
-          #predicates:
-          #- Path=/organization/**
-          #filters:
-          #- RewritePath=/organization/(?<path>.*), /$\{path}
+        routes:
+        - id: stockapp-frontserver
+          uri: lb://stockapp-frontserver
+          predicates:
+          - Path=/front/**
+          filters:
+          - RewritePath=/front/(?<path>.*), /$\{path}
         #- id: licensing-service
           #uri: lb://licensing-service
           #predicates:
