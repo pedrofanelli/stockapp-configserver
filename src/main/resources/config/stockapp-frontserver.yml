@@ -1,0 +1,24 @@
+
+server:
+  port: 8091
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+        
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+      
+      
+logging:
+  level:
+    com.stockapp.frontserver: DEBUG
