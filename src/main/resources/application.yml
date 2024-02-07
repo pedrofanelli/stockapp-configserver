@@ -37,4 +37,5 @@ logging:
     web: DEBUG
     
 
-
+apikey:
+  value: ${apikey}

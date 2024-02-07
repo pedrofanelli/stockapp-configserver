@@ -22,6 +22,8 @@ logging:
 
 
 spring:
+  config:
+    import: optional:file:.env[.properties]
   cloud:
     stream:
       kafka:
@@ -39,3 +41,5 @@ spring:
       fixed-delay: 2000
       initial-delay: 10000
 
+apikey:
+  value: ${apikey}
