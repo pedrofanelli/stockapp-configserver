@@ -36,6 +36,3 @@ logging:
   level:
     web: DEBUG
     
-
-apikey:
-  value: ${apikey}
