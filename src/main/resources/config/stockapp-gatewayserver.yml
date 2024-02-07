@@ -37,12 +37,12 @@ spring:
           - Path=/front/**
           filters:
           - RewritePath=/front/(?<path>.*), /$\{path}
-        #- id: licensing-service
-          #uri: lb://licensing-service
-          #predicates:
-          #- Path=/license/**
-          #filters:
-          #- RewritePath=/license/(?<path>.*), /$\{path}
+        - id: stockapp-apiconnection
+          uri: lb://stockapp-apiconnection
+          predicates:
+          - Path=/apiconnection/**
+          filters:
+          - RewritePath=/apiconnection/(?<path>.*), /$\{path}
 
 logging:
   level:
