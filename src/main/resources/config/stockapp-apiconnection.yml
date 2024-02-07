@@ -38,7 +38,7 @@ spring:
       definition: producerBinding,consumerBinding
   integration:
     poller:
-      fixed-delay: 2000
+      fixed-delay: 15000
       initial-delay: 10000
 
 
