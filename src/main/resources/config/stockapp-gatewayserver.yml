@@ -26,6 +26,12 @@ spring:
   cloud:
     loadbalancer.ribbon.enabled: false
     gateway:
+        globalcors:
+          corsConfigurations:
+            '[/**]':
+              allowedOrigins: "http://localhost:8091"
+              allowedHeaders: "*"
+              allowedMethods: "*"
         discovery:
           locator:
             enabled: true
